@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const WHATSAPP_NUMBER = "554999227869"; // +55 49 9922-7869
+
     // 1. Menu Mobile Responsivo
     const menuToggle = document.getElementById("menuToggle");
     const navLinks = document.getElementById("navLinks");
@@ -17,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelectorAll(".slide");
     const dots = document.querySelectorAll(".dot");
     const progressFill = document.getElementById("progressFill");
-    const SLIDE_DURATION = 5000; // 5 segundos
+    const SLIDE_DURATION = 5000;
     let currentSlide = 0;
     let slideInterval;
 
@@ -85,16 +87,32 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // 4. Formulaire de Contact (Simulation pour site statique GitHub Pages)
+    // 4. Formulaire Fonctionnel -> Redirection directe vers WhatsApp
     const contactForm = document.getElementById("contactForm");
     const formFeedback = document.getElementById("formFeedback");
 
     contactForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        const name = document.getElementById("fullName").value.trim();
-        const course = document.getElementById("selectedCourse").value;
 
-        formFeedback.textContent = `Merci ${name} ! Votre demande concernant le domaine "${course}" a bien été enregistrée. Notre équipe vous contactera très prochainement.`;
-        contactForm.reset();
+        const fullName = document.getElementById("fullName").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const userWhatsapp = document.getElementById("whatsapp").value.trim();
+        const selectedCourse = document.getElementById("selectedCourse").value;
+        const message = document.getElementById("message").value.trim();
+
+        const whatsappText = 
+`Bonjour *Horizons Brésil (AeroClick Travel)*, je souhaite garantir ma place pour étudier à Chapecó.
+
+*Nom complet :* ${fullName}
+*E-mail :* ${email}
+*Mon WhatsApp :* ${userWhatsapp}
+*Domaine souhaité :* ${selectedCourse}
+*Message / Cours précis :* ${message || "Je souhaite recevoir les informations complètes d'inscription."}`;
+
+        const encodedMessage = encodeURIComponent(whatsappText);
+        const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+        formFeedback.textContent = "Redirection vers WhatsApp en cours pour transmettre votre dossier...";
+        window.open(whatsappUrl, "_blank", "noopener,noreferrer");
     });
 });
