@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizons Brésil — Étudier à Chapecó | Guide VITEM IV & Instituto Mix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <span class="logo-badge">HB</span>
+                <span>Horizons <strong>Brésil</strong></span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+            <nav class="nav-links" id="navLinks">
+                <a href="#ecole">L'École Partenaire</a>
+                <a href="#cours">Nos Cours</a>
+                <a href="#visa">Guide Visa VITEM IV</a>
+                <a href="#chapeco">Vivre à Chapecó</a>
+                <a href="#contact" class="btn-nav">Nous Contacter</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Carousel (5 secondes) -->
+    <section class="hero-slider">
+        <div class="slides-container" id="slidesContainer">
+            <!-- Slide 1 : Étudiants -->
+            <div class="slide active" style="background-image: linear-gradient(rgba(10, 25, 47, 0.72), rgba(10, 25, 47, 0.78)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80');">
+                <div class="container slide-content">
+                    <span class="badge-hero">Programme International d'Études</span>
+                    <h1>Construisez votre avenir professionnel au Brésil</h1>
+                    <p>Accompagnement complet pour les étudiants internationaux : inscription académique, préparation du dossier VITEM IV et accueil à Chapecó.</p>
+                    <div class="hero-buttons">
+                        <a href="#cours" class="btn-primary">Découvrir les Formations</a>
+                        <a href="#visa" class="btn-secondary">Procédure de Visa</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 : École / Formation Pratique -->
+            <div class="slide" style="background-image: linear-gradient(rgba(10, 25, 47, 0.72), rgba(10, 25, 47, 0.78)), url('https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1600&q=80');">
+                <div class="container slide-content">
+                    <span class="badge-hero">Partenariat Officiel — Instituto Mix Chapecó</span>
+                    <h1>Des formations pratiques orientées vers l'emploi</h1>
+                    <p>Plus de 25 cours professionnels dans les domaines de la mécanique, de la santé, de la beauté, de la gestion et des langues.</p>
+                    <div class="hero-buttons">
+                        <a href="#ecole" class="btn-primary">Connaître l'École</a>
+                        <a href="#cours" class="btn-secondary">Catalogue des Cours</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 : Ville de Chapecó -->
+            <div class="slide" style="background-image: linear-gradient(rgba(10, 25, 47, 0.72), rgba(10, 25, 47, 0.78)), url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1600&q=80');">
+                <div class="container slide-content">
+                    <span class="badge-hero">Santa Catarina — Sud du Brésil</span>
+                    <h1>Chapecó : Une ville dynamique, sûre et accueillante</h1>
+                    <p>Pôle économique majeur du sud du Brésil offrant une excellente qualité de vie, de nombreuses opportunités et une communauté chaleureuse.</p>
+                    <div class="hero-buttons">
+                        <a href="#chapeco" class="btn-primary">Explorer Chapecó</a>
+                        <a href="#contact" class="btn-secondary">Démarrer mon Projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contrôles du carrousel -->
+        <div class="slider-dots" id="sliderDots">
+            <button class="dot active" data-index="0" aria-label="Diapositive 1"></button>
+            <button class="dot" data-index="1" aria-label="Diapositive 2"></button>
+            <button class="dot" data-index="2" aria-label="Diapositive 3"></button>
+        </div>
+        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </section>
+
+    <!-- Section École Partenaire -->
+    <section id="ecole" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Notre Partenaire Éducatif</span>
+                <h2>Instituto Mix de Profissões — Unité Chapecó (Efapi)</h2>
+                <p>Un réseau d'enseignement professionnel reconnu dans tout le Brésil pour sa méthodologie pratique, ses équipements modernes et son suivi personnalisé.</p>
+            </div>
+
+            <div class="school-grid">
+                <div class="school-card">
+                    <h3>🎓 Enseignement Pratique & Certifié</h3>
+                    <p>Les cours combinent théorie appliquée et ateliers pratiques dès les premières semaines, permettant une insertion rapide sur le marché du travail.</p>
+                </div>
+                <div class="school-card">
+                    <h3>📍 Emplacement Stratégique (Efapi)</h3>
+                    <p>Située dans le quartier universitaire et dynamique d'Efapi à Chapecó, l'école est facilement accessible en transport public et proche des commodités.</p>
+                </div>
+                <div class="school-card">
+                    <h3>🤝 Accueil des Étudiants Étrangers</h3>
+                    <p>Cours de <strong>Portugais pour immigrants</strong> inclus dans l'offre pour faciliter votre intégration académique, sociale et professionnelle au Brésil.</p>
+                </div>
+            </div>
+
+            <div class="school-cta">
+                <a href="https://institutomix.com.br/franquia/chapeco-efapi" target="_blank" rel="noopener noreferrer" class="btn-outline">
+                    Visiter le site officiel de l'Instituto Mix Chapecó (Efapi) ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Catalogue des Cours -->
+    <section id="cours" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Catalogue Académique</span>
+                <h2>Cours Disponibles à Chapecó</h2>
+                <p>Filtrez par domaine pour explorer nos formations professionnelles et programmes détaillés.</p>
+            </div>
+
+            <!-- Filtres -->
+            <div class="filter-buttons" id="filterButtons">
+                <button class="filter-btn active" data-filter="all">Tous les domaines</button>
+                <button class="filter-btn" data-filter="mecanique">🚗 Mécanique</button>
+                <button class="filter-btn" data-filter="beaute">💅 Beauté</button>
+                <button class="filter-btn" data-filter="sante">🧪 Santé</button>
+                <button class="filter-btn" data-filter="gastronomie">🍔 Gastronomie</button>
+                <button class="filter-btn" data-filter="tech">💻 Tech & Admin</button>
+                <button class="filter-btn" data-filter="langues">🌎 Langues & Éducation</button>
+            </div>
+
+            <!-- Grille des catégories -->
+            <div class="courses-grid" id="coursesGrid">
+
+                <!-- Mécanique -->
+                <div class="course-category-card" data-category="mecanique">
+                    <div class="cat-header">
+                        <span class="cat-icon">🚗</span>
+                        <h3>Mécanique</h3>
+                    </div>
+                    <ul class="course-list">
+                        <li>
+                            <strong>Mécanique automobile</strong>
+                            <span class="course-meta">Durée : ~8 mois | Charge horaire : 93h | 1 cours/semaine</span>
+                            <p class="course-desc">Modules : Fondamentaux électromécaniques, systèmes de freins, entretien de la suspension, entretien du moteur et système de transmission.</p>
+                        </li>
+                        <li>
+                            <strong>Électricité automobile</strong>
+                            <span class="course-meta">Durée : ~7 mois | Charge horaire : 81h | 1 cours/semaine</span>
+                            <p class="course-desc">Modules : Fondamentaux de l'électricité, lecture de schémas électriques, éclairage et tableau de bord, sonorisation automobile, charge et démarrage électronique.</p>
+                        </li>
+                        <li>
+                            <strong>Électricité automobile + mécanique automobile</strong>
+                            <span class="course-meta">Formation complète combinée</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Beauté -->
+                <div class="course-category-card" data-category="beaute">
+                    <div class="cat-header">
+                        <span class="cat-icon">💅💇‍♀️</span>
+                        <h3>Beauté</h3>
+                    </div>
+                    <ul class="course-list">
+                        <li><strong>Coiffure</strong></li>
+                        <li><strong>Manucure et pédicure + pose d’ongles</strong></li>
+                        <li><strong>Maquillage</strong></li>
+                        <li><strong>Design des sourcils</strong></li>
+                        <li><strong>Extension de cils</strong></li>
+                        <li><strong>Barberie / Coiffure pour hommes</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Santé -->
+                <div class="course-category-card" data-category="sante">
+                    <div class="cat-header">
+                        <span class="cat-icon">🧪💊</span>
+                        <h3>Santé</h3>
+                    </div>
+                    <ul class="course-list">
+                        <li>
+                            <strong>Massothérapie (Massage Professionnel)</strong>
+                            <span class="course-meta">Durée : 15 mois | Présentiel + EAD | 1 fois/semaine</span>
+                            <p class="course-desc">Programme : Éthique et hygiène, anatomie et physiologie, massage relaxant, thérapeutique, modelant, réflexologie, bambuthérapie, pierres chaudes, ventousothérapie et drainage lymphatique.</p>
+                        </li>
+                        <li><strong>Assistant(e) en pharmacie</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Gastronomie -->
+                <div class="course-category-card" data-category="gastronomie">
+                    <div class="cat-header">
+                        <span class="cat-icon">🍔🧁</span>
+                        <h3>Gastronomie</h3>
+                    </div>
+                    <ul class="course-list">
+                        <li>
+                            <strong>Pâtisserie</strong>
+                            <p class="course-desc">Techniques professionnelles de boulangerie fine, confiserie, pâtes, crèmes, décors et production commerciale.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Technologie et Administration -->
+                <div class="course-category-card" data-category="tech">
+                    <div class="cat-header">
+                        <span class="cat-icon">💻</span>
+                        <h3>Technologie et Administration</h3>
+                    </div>
+                    <ul class="course-list two-cols">
+                        <li><strong>Assistant(e) en marketing</strong></li>
+                        <li><strong>Assistant(e) administratif(ve)</strong></li>
+                        <li><strong>Assistant(e) administratif(ve) expert(e)</strong></li>
+                        <li><strong>Assistant(e) administratif(ve) et financier(ère)</strong></li>
+                        <li><strong>Assistant(e) bancaire</strong></li>
+                        <li><strong>Excel</strong></li>
+                        <li><strong>Gestion financière</strong></li>
+                        <li><strong>Informatique de base</strong></li>
+                        <li><strong>Informatique avancée</strong></li>
+                        <li><strong>Informatique en entreprise</strong></li>
+                        <li><strong>Informatique créative</strong></li>
+                        <li><strong>Informatique pour les seniors</strong></li>
+                        <li><strong>Secrétariat exécutif</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Langues et Éducation -->
+                <div class="course-category-card" data-category="langues">
+                    <div class="cat-header">
+                        <span class="cat-icon">🌎</span>
+                        <h3>Langues et Éducation</h3>
+                    </div>
+                    <ul class="course-list">
+                        <li>
+                            <strong>Portugais pour immigrants</strong>
+                            <p class="course-desc">Apprentissage intensif de la langue portugaise, communication quotidienne, vocabulaire professionnel et culture brésilienne.</p>
+                        </li>
+                        <li><strong>Anglais</strong></li>
+                        <li><strong>EJA (Éducation des jeunes et des adultes)</strong></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Guide Visa VITEM IV -->
+    <section id="visa" class="section bg-dark text-white">
+        <div class="container">
+            <div class="section-header light">
+                <span class="subtitle">Informations Consulaires Officielles</span>
+                <h2>Visa Temporaire IV (VITEM IV) — Étudiants</h2>
+                <p>Pour les séjours d'études, de stage ou d'échange au Brésil de <strong>plus de 90 jours</strong>. Instructions basées sur les directives de l'Ambassade du Brésil à Port-au-Prince.</p>
+            </div>
+
+            <!-- Alertes importantes -->
+            <div class="alert-box">
+                <h4>⚠️ Considérations Générales Importantes</h4>
+                <ul>
+                    <li><strong>Pouvoir discrétionnaire :</strong> La délivrance du VITEM IV relève de l'État brésilien et constitue une simple perspective de droit.</li>
+                    <li><strong>Frais non remboursables :</strong> En cas de refus du visa, aucun remboursement des frais consulaires ne sera effectué.</li>
+                    <li><strong>Billet d'avion :</strong> N'achetez pas votre billet définitif avant l'obtention du visa. Une <strong>simple réservation aller-retour</strong> suffit pour le dossier.</li>
+                    <li><strong>Visa individuel :</strong> Le Brésil n'émet pas de visas collectifs. Chaque membre de la famille doit déposer un dossier et payer les frais séparément.</li>
+                    <li><strong>Passeport :</strong> Doit comporter au moins <strong>2 pages vierges</strong> et être valide au moins <strong>6 mois</strong> à compter de la date d'entrée au Brésil.</li>
+                    <li><strong>Dépôt personnel :</strong> Toutes les demandes doivent être présentées personnellement au Secteur Consulaire avec les <strong>documents originaux</strong> (les copies simples ne sont pas acceptées).</li>
+                    <li><strong>Autres nationalités :</strong> Si votre passeport n'est pas haïtien, consultez les conditions spécifiques à <code>consular.principe@itamaraty.gov.br</code>.</li>
+                </ul>
+            </div>
+
+            <!-- Checklist Interactive des Documents -->
+            <div class="visa-layout">
+                <div class="checklist-card">
+                    <h3>📋 Liste des Documents Obligatoires</h3>
+                    <p class="small-note">Cochez les éléments au fur et à mesure de votre préparation :</p>
+                    <ul class="checklist" id="visaChecklist">
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span><strong>Passeport valide</strong> (minimum 6 mois de validité à l'entrée au Brésil + au moins 2 pages vierges).</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span><strong>1 Photo récente</strong> du visage en couleur, dimension <strong>5 x 7 cm</strong>, format OACI.</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span><strong>Acte de naissance</strong> : obligatoirement l'<strong>extrait des Archives Nationales</strong> (la version manuscrite n'est pas acceptée).</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span><strong>Justificatifs de capacité financière</strong> (personnelle, des responsables ou preuve de bourse) : <strong>extraits bancaires des 3 derniers mois</strong> obligatoires (une simple attestation de solde actuel est refusée).</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span><strong>Réservation des billets d'avion aller-retour</strong> (ne pas acheter avant l'obtention du visa).</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span><strong>Casier judiciaire</strong> : délivré uniquement par le <strong>Parquet, le Ministère de la Justice ou la DCPJ</strong> (le Certificat de Bonne Vie et Mœurs n'est pas accepté).</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span><strong>Curriculum Vitae (CV)</strong> à jour.</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span><strong>Documents additionnels selon le cours</strong> (lettre d'acceptation de l'école / attestation d'inscription pour cours divers, enseignement technique ou langues).</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span><strong>Pour les mineurs (-18 ans) :</strong> Formulaire d'autorisation de délivrance de visa signé par les parents.</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Étapes et Frais -->
+                <div class="steps-card">
+                    <h3>💳 Valeur des Frais Consulaires</h3>
+                    <div class="fee-highlight">
+                        <span class="fee-amount">100 USD</span>
+                        <p>À déposer uniquement au comptoir de n'importe quelle agence <strong>SOGEBANK</strong> sur le compte de l'Ambassade du Brésil à Port-au-Prince : <strong>Nº 130210552</strong>.</p>
+                        <p class="warning-text">⚠️ Le paiement par Internet n'est PAS accepté. Conservez l'original du reçu bancaire.</p>
+                    </div>
+
+                    <h3>🚀 Étapes de la Demande</h3>
+                    <ol class="visa-steps">
+                        <li>
+                            <strong>1. Réunir tous les originaux</strong>
+                            <p>Préparez l'ensemble des pièces requises ci-contre avant toute démarche en ligne.</p>
+                        </li>
+                        <li>
+                            <strong>2. Payer les frais à la SOGEBANK</strong>
+                            <p>Effectuez le dépôt de 100 USD au comptoir et gardez le reçu original.</p>
+                        </li>
+                        <li>
+                            <strong>3. Formulaire électronique (RER)</strong>
+                            <p>Remplissez le formulaire de demande en ligne, téléversez les copies numériques et imprimez le <em>Recibo de Entrega de Requerimento</em> (à signer devant l'agent consulaire le jour du RDV).</p>
+                        </li>
+                        <li>
+                            <strong>4. Plateforme e-Consular</strong>
+                            <p>Créez votre demande sur <strong>e-Consular</strong> et téléversez à nouveau toutes les copies numériques demandées.</p>
+                        </li>
+                        <li>
+                            <strong>5. Validation et Rendez-vous (RDV)</strong>
+                            <p>Attendez l'e-mail de validation de l'ambassade, puis reconnectez-vous à l'e-Consular pour fixer votre RDV et présenter tous les originaux.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Chapecó -->
+    <section id="chapeco" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Votre Destination d'Accueil</span>
+                <h2>Pourquoi choisir Chapecó (Santa Catarina) ?</h2>
+                <p>Située dans l'État de Santa Catarina au sud du Brésil, Chapecó est reconnue pour son dynamisme économique et son accueil chaleureux.</p>
+            </div>
+            <div class="school-grid">
+                <div class="school-card">
+                    <h3>📈 Pôle Économique & Emploi</h3>
+                    <p>Capitale de l'agro-industrie et centre majeur de services, commerce et technologie dans l'ouest de Santa Catarina, offrant un marché du travail actif.</p>
+                </div>
+                <div class="school-card">
+                    <h3>🛡️ Sécurité & Qualité de Vie</h3>
+                    <p>Une ville moderne à taille humaine, réputée pour sa sécurité, ses espaces verts, ses universités et ses infrastructures publiques de qualité.</p>
+                </div>
+                <div class="school-card">
+                    <h3>🤝 Communauté Internationale</h3>
+                    <p>Une forte présence d'étudiants et de travailleurs internationaux, notamment haïtiens, facilitant l'entraide et l'intégration dès votre arrivée.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact / Pré-inscription -->
+    <section id="contact" class="section">
+        <div class="container contact-wrapper">
+            <div class="contact-info">
+                <span class="subtitle">Accompagnement Personnalisé</span>
+                <h2>Prêt à démarrer votre projet d'études au Brésil ?</h2>
+                <p>Remplissez ce formulaire pour recevoir des informations sur les dates de rentrée à l'Instituto Mix Chapecó et l'assistance pour votre lettre d'acceptation.</p>
+                <div class="info-items">
+                    <p>📍 <strong>École :</strong> Instituto Mix de Profissões — Chapecó (Efapi), SC, Brésil</p>
+                    <p>🌐 <strong>Lien officiel :</strong> <a href="https://institutomix.com.br/franquia/chapeco-efapi" target="_blank">institutomix.com.br/franquia/chapeco-efapi</a></p>
+                    <p>📧 <strong>Information Visa (Autres passeports) :</strong> consular.principe@itamaraty.gov.br</p>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <h3>Demande d'information</h3>
+                <div class="form-group">
+                    <label for="fullName">Nom complet *</label>
+                    <input type="text" id="fullName" required placeholder="Ex: Jean Baptiste">
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse e-mail *</label>
+                    <input type="email" id="email" required placeholder="votre@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">WhatsApp (avec indicatif pays) *</label>
+                    <input type="tel" id="whatsapp" required placeholder="Ex: +509 0000 0000">
+                </div>
+                <div class="form-group">
+                    <label for="selectedCourse">Domaine d'études souhaité *</label>
+                    <select id="selectedCourse" required>
+                        <option value="">-- Choisissez un domaine --</option>
+                        <option value="Mécanique">🚗 Mécanique (Automobile / Électricité)</option>
+                        <option value="Beauté">💅 Beauté (Coiffure, Esthétique, Barberie)</option>
+                        <option value="Santé">🧪 Santé (Massothérapie, Pharmacie)</option>
+                        <option value="Gastronomie">🍔 Gastronomie (Pâtisserie)</option>
+                        <option value="Technologie et Administration">💻 Technologie et Administration</option>
+                        <option value="Langues et Éducation">🌎 Langues et Éducation (Portugais, Anglais, EJA)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Votre message ou question</label>
+                    <textarea id="message" rows="3" placeholder="Précisez votre projet ou vos questions sur le visa..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">Envoyer ma demande</button>
+                <p id="formFeedback" class="form-feedback"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <strong>Horizons Brésil — Chapecó</strong>
+                <p>Portail d'information pour les étudiants internationaux en partenariat avec l'Instituto Mix Chapecó (Efapi).</p>
+            </div>
+            <div class="footer-links">
+                <a href="#ecole">L'École</a>
+                <a href="#cours">Les Cours</a>
+                <a href="#visa">Visa VITEM IV</a>
+                <a href="#chapeco">Chapecó</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Horizons Brésil. Les informations consulaires sont fournies à titre indicatif selon les directives de l'Ambassade du Brésil.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
